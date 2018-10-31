@@ -4,10 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Google Map</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Google Maps</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>Google Map</h1>
+  <div class="wrapper">
+    <div id="js-map" class="map"></div>
+    <div id="js-map-list" class="map__list">
+      <ul class="p-map__list__inner"></ul>
+    </div>
+    <div id="js-map-carousel" class="map__carousel">
+      <div id="js-map-carousel-prev" class="map__carousel__prev js-hide"></div>
+      <div id="js-map-carousel-next" class="map__carousel__next js-hide"></div>
+    </div>
+    <a id="js-map-app" class="map__app" href="">地図アプリで見る</a>
+    <div id="js-map-mylocation" class="map__mylocation"></div>
+  </div>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
